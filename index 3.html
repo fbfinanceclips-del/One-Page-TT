@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wealth Bite</title>
+<meta name="description" content="Personal finance &amp; investing tips in bite-sized clips">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0A2A21;
+  --bg-glow: #16513D;
+  --gold: #F2B632;
+  --white: #FFFFFF;
+  --text: #D9E6DF;
+  --muted: #B9CCC3;
+  --card: #12412F;
+  --box: #0E3B2E;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  background: radial-gradient(circle at 50% 8%, var(--bg-glow) 0%, var(--bg) 70%) no-repeat, var(--bg);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--text);
+}
+.heading { font-family: 'Archivo Black', 'Arial Black', sans-serif; font-weight: 400; }
+.page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 40px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.header { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; margin-bottom: 8px; }
+.avatar {
+  width: 124px; height: 124px; border-radius: 50%;
+  background: var(--box); border: 3px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+}
+h1 { margin: 0; font-size: 30px; line-height: 1; color: var(--white); }
+h1 span { color: var(--gold); }
+.bio { margin: 0; font-size: 15px; max-width: 290px; }
+.card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--card); border: 2px solid var(--gold); border-radius: 16px;
+  padding: 18px 20px; min-height: 44px;
+}
+.card:hover { background: #17503B; }
+.card:focus-visible, .box a:focus-visible { outline: 3px solid var(--white); outline-offset: 3px; }
+.card-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.card-title { font-family: 'Archivo Black', 'Arial Black', sans-serif; font-size: 17px; color: var(--white); }
+.tag { font-size: 12px; color: var(--gold); letter-spacing: 1px; white-space: nowrap; }
+.card-text { font-size: 14px; margin-top: 6px; }
+.note { font-size: 12px; line-height: 1.5; color: var(--muted); margin: 0; }
+.box { background: var(--box); border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; }
+.box h2 { margin: 0 0 10px; font-size: 18px; color: var(--white); }
+.box p { margin: 0 0 10px; }
+.box p:last-child { margin-bottom: 0; font-size: 12px; }
+.box a { color: var(--gold); }
+.footer { font-size: 12px; color: var(--muted); text-align: center; margin: 0; }
+.legal { color: var(--text); font-size: 14px; display: inline-block; padding: 10px 14px; }
+.legal:focus-visible { outline: 3px solid var(--white); outline-offset: 3px; }
+</style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="avatar">
+        <svg width="104" height="78" role="img" aria-label="Wealth Bite Logo" viewBox="0 0 400 300">
+<defs>
+<linearGradient id="tut" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BDB08F"/><stop offset="0.4" stop-color="#EDE5CC"/><stop offset="1" stop-color="#FFFDF2"/></linearGradient>
+<linearGradient id="tlt" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#BDB08F"/><stop offset="0.4" stop-color="#EDE5CC"/><stop offset="1" stop-color="#FFFDF2"/></linearGradient>
+<linearGradient id="but" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8F8467"/><stop offset="1" stop-color="#CFC4A5"/></linearGradient>
+<linearGradient id="blt" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#8F8467"/><stop offset="1" stop-color="#CFC4A5"/></linearGradient>
+<linearGradient id="gdt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE9A0"/><stop offset="1" stop-color="#E3A21A"/></linearGradient>
+</defs>
+<path d="M8,30 Q200,-8 392,30 L372,76 Q200,52 28,76 Z" fill="url(#but)"/>
+<path d="M28,224 Q200,250 372,224 L392,272 Q200,308 8,272 Z" fill="url(#blt)"/>
+<path d="M40,26 Q200,-2 360,26" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.2"/>
+<path d="M28,76 Q200,52 372,76" fill="none" stroke="#5E5440" stroke-width="3"/>
+<path d="M28,224 Q200,250 372,224" fill="none" stroke="#5E5440" stroke-width="3"/>
+<path d="M58.0,72.2 L58.0,88.2" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M34,70.2 L34,75.2 Q36,121.8 66,160 Q80,119.3 82,69.6 L82,64.6 Z" fill="url(#tut)" stroke="#7E725A" stroke-width="1.2"/><path d="M72,69.6 L66,160 Q80,119.3 82,69.6 Z" fill="#6F5F3E" opacity="0.28"/><path d="M40,75.2 Q42,121.8 65,146" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M102.0,67.9 L102.0,83.9" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M86,64.3 L86,69.3 Q88,89.5 102,106 Q116,88.3 118,66.7 L118,61.7 Z" fill="url(#tut)" stroke="#7E725A" stroke-width="1.2"/><path d="M108,66.7 L102,106 Q116,88.3 118,66.7 Z" fill="#6F5F3E" opacity="0.28"/><path d="M92,69.3 Q94,89.5 101,92" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M138.0,65.6 L138.0,81.6" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M122,61.5 L122,66.5 Q124,84.9 138,100 Q152,84.2 154,64.9 L154,59.9 Z" fill="url(#tut)" stroke="#7E725A" stroke-width="1.2"/><path d="M144,64.9 L138,100 Q152,84.2 154,64.9 Z" fill="#6F5F3E" opacity="0.28"/><path d="M128,66.5 Q130,84.9 137,86" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M175.0,64.3 L175.0,80.3" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M158,59.7 L158,64.7 Q160,80.8 175,94 Q190,80.5 192,64.0 L192,59.0 Z" fill="url(#tut)" stroke="#7E725A" stroke-width="1.2"/><path d="M182,64.0 L175,94 Q190,80.5 192,64.0 Z" fill="#6F5F3E" opacity="0.28"/><path d="M164,64.7 Q166,80.8 174,80" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M225.0,64.3 L225.0,80.3" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M208,59.0 L208,64.0 Q210,80.5 225,94 Q240,80.8 242,64.7 L242,59.7 Z" fill="url(#tut)" stroke="#7E725A" stroke-width="1.2"/><path d="M232,64.7 L225,94 Q240,80.8 242,64.7 Z" fill="#6F5F3E" opacity="0.28"/><path d="M214,64.0 Q216,80.5 224,80" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M262.0,65.6 L262.0,81.6" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M246,59.9 L246,64.9 Q248,84.2 262,100 Q276,84.9 278,66.5 L278,61.5 Z" fill="url(#tut)" stroke="#7E725A" stroke-width="1.2"/><path d="M268,66.5 L262,100 Q276,84.9 278,66.5 Z" fill="#6F5F3E" opacity="0.28"/><path d="M252,64.9 Q254,84.2 261,86" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M298.0,67.9 L298.0,83.9" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M282,61.7 L282,66.7 Q284,88.3 298,106 Q312,89.5 314,69.3 L314,64.3 Z" fill="url(#tut)" stroke="#7E725A" stroke-width="1.2"/><path d="M304,69.3 L298,106 Q312,89.5 314,69.3 Z" fill="#6F5F3E" opacity="0.28"/><path d="M288,66.7 Q290,88.3 297,92" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M342.0,72.2 L342.0,88.2" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M318,64.6 L318,69.6 Q320,119.3 334,160 Q364,121.8 366,75.2 L366,70.2 Z" fill="url(#tut)" stroke="#7E725A" stroke-width="1.2"/><path d="M356,75.2 L334,160 Q364,121.8 366,75.2 Z" fill="#6F5F3E" opacity="0.28"/><path d="M324,69.6 Q326,119.3 333,146" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M54.0,227.6 L54.0,211.6" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M36,230.2 L36,225.2 Q38,215.7 54,208 Q70,217.8 72,229.8 L72,234.8 Z" fill="url(#tlt)" stroke="#7E725A" stroke-width="1.2"/><path d="M62,229.8 L54,208 Q70,217.8 72,229.8 Z" fill="#6F5F3E" opacity="0.28"/><path d="M42,225.2 Q44,215.7 53,222" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M100.0,232.6 L100.0,216.6" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M78,235.5 L78,230.5 Q80,201.6 100,178 Q120,203.3 122,234.3 L122,239.3 Z" fill="url(#tlt)" stroke="#7E725A" stroke-width="1.2"/><path d="M112,234.3 L100,178 Q120,203.3 122,234.3 Z" fill="#6F5F3E" opacity="0.28"/><path d="M84,230.5 Q86,201.6 99,192" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M145.0,235.7 L145.0,219.7" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M128,239.7 L128,234.7 Q130,217.8 145,204 Q160,218.6 162,236.4 L162,241.4 Z" fill="url(#tlt)" stroke="#7E725A" stroke-width="1.2"/><path d="M152,236.4 L145,204 Q160,218.6 162,236.4 Z" fill="#6F5F3E" opacity="0.28"/><path d="M134,234.7 Q136,217.8 144,218" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M181.0,236.8 L181.0,220.8" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M166,241.5 L166,236.5 Q168,224.1 181,214 Q194,224.3 196,237.0 L196,242.0 Z" fill="url(#tlt)" stroke="#7E725A" stroke-width="1.2"/><path d="M186,237.0 L181,214 Q194,224.3 196,237.0 Z" fill="#6F5F3E" opacity="0.28"/><path d="M172,236.5 Q174,224.1 180,228" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M219.0,236.8 L219.0,220.8" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M204,242.0 L204,237.0 Q206,224.3 219,214 Q232,224.1 234,236.5 L234,241.5 Z" fill="url(#tlt)" stroke="#7E725A" stroke-width="1.2"/><path d="M224,236.5 L219,214 Q232,224.1 234,236.5 Z" fill="#6F5F3E" opacity="0.28"/><path d="M210,237.0 Q212,224.3 218,228" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M255.0,235.7 L255.0,219.7" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M238,241.4 L238,236.4 Q240,218.6 255,204 Q270,217.8 272,234.7 L272,239.7 Z" fill="url(#tlt)" stroke="#7E725A" stroke-width="1.2"/><path d="M262,234.7 L255,204 Q270,217.8 272,234.7 Z" fill="#6F5F3E" opacity="0.28"/><path d="M244,236.4 Q246,218.6 254,218" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M300.0,232.6 L300.0,216.6" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M278,239.3 L278,234.3 Q280,203.3 300,178 Q320,201.6 322,230.5 L322,235.5 Z" fill="url(#tlt)" stroke="#7E725A" stroke-width="1.2"/><path d="M312,230.5 L300,178 Q320,201.6 322,230.5 Z" fill="#6F5F3E" opacity="0.28"/><path d="M284,234.3 Q286,203.3 299,192" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/><path d="M346.0,227.6 L346.0,211.6" stroke="#6F644A" stroke-width="3" stroke-linecap="round" opacity="0.45"/><path d="M328,234.8 L328,229.8 Q330,217.8 346,208 Q362,215.7 364,225.2 L364,230.2 Z" fill="url(#tlt)" stroke="#7E725A" stroke-width="1.2"/><path d="M354,225.2 L346,208 Q362,215.7 364,225.2 Z" fill="#6F5F3E" opacity="0.28"/><path d="M334,229.8 Q336,217.8 345,222" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+<text x="92" y="167" font-size="42" fill="#000000" opacity="0.55" class="lg" textLength="220" lengthAdjust="spacingAndGlyphs">WEALTH</text>
+<text x="90" y="164" font-size="42" fill="url(#gdt)" class="lg" textLength="220" lengthAdjust="spacingAndGlyphs">WEALTH</text>
+</svg>
+      </div>
+      <h1 class="heading">WEALTH <span>BITE</span></h1>
+      <p class="bio">Personal finance &amp; investing tips in bite-sized clips</p>
+    </header>
+
+    <!-- KARTE 1: href, Titel und Beschreibung anpassen -->
+    <a class="card" href="#">
+      <div class="card-top"><span class="card-title">TITEL LINK 1*</span><span class="tag">WERBUNG</span></div>
+      <div class="card-text">Kurzbeschreibung des Angebots</div>
+    </a>
+    <!-- KARTE 2: href, Titel und Beschreibung anpassen -->
+    <a class="card" href="#">
+      <div class="card-top"><span class="card-title">TITEL LINK 2*</span><span class="tag">WERBUNG</span></div>
+      <div class="card-text">Kurzbeschreibung des Angebots</div>
+    </a>
+    <!-- KARTE 3: href, Titel und Beschreibung anpassen -->
+    <a class="card" href="#">
+      <div class="card-top"><span class="card-title">TITEL LINK 3*</span><span class="tag">WERBUNG</span></div>
+      <div class="card-text">Kurzbeschreibung des Angebots</div>
+    </a>
+
+    <p class="note">* Ad / affiliate link (Werbung): If you sign up or buy through it, I may earn a commission. The price stays the same for you.</p>
+
+
+    <p class="footer">Not financial advice. For educational purposes only.</p>
+    <p class="footer"><a class="legal" href="impressum.html">Impressum</a></p>
+  </main>
+</body>
+</html>

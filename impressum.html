@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impressum – Wealth Bite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0A2A21;
+  --bg-glow: #16513D;
+  --gold: #F2B632;
+  --white: #FFFFFF;
+  --text: #D9E6DF;
+  --muted: #B9CCC3;
+  --card: #12412F;
+  --box: #0E3B2E;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  background: radial-gradient(circle at 50% 8%, var(--bg-glow) 0%, var(--bg) 70%) no-repeat, var(--bg);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--text);
+}
+.heading { font-family: 'Archivo Black', 'Arial Black', sans-serif; font-weight: 400; }
+.page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 40px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.header { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; margin-bottom: 8px; }
+.avatar {
+  width: 124px; height: 124px; border-radius: 50%;
+  background: var(--box); border: 3px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+}
+h1 { margin: 0; font-size: 30px; line-height: 1; color: var(--white); }
+h1 span { color: var(--gold); }
+.bio { margin: 0; font-size: 15px; max-width: 290px; }
+.card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--card); border: 2px solid var(--gold); border-radius: 16px;
+  padding: 18px 20px; min-height: 44px;
+}
+.card:hover { background: #17503B; }
+.card:focus-visible, .box a:focus-visible { outline: 3px solid var(--white); outline-offset: 3px; }
+.card-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.card-title { font-family: 'Archivo Black', 'Arial Black', sans-serif; font-size: 17px; color: var(--white); }
+.tag { font-size: 12px; color: var(--gold); letter-spacing: 1px; white-space: nowrap; }
+.card-text { font-size: 14px; margin-top: 6px; }
+.note { font-size: 12px; line-height: 1.5; color: var(--muted); margin: 0; }
+.box { background: var(--box); border-radius: 16px; padding: 20px; font-size: 14px; line-height: 1.5; }
+.box h2 { margin: 0 0 10px; font-size: 18px; color: var(--white); }
+.box p { margin: 0 0 10px; }
+.box p:last-child { margin-bottom: 0; font-size: 12px; }
+.box a { color: var(--gold); }
+.footer { font-size: 12px; color: var(--muted); text-align: center; margin: 0; }
+.back { color: var(--gold); font-size: 14px; display: inline-block; padding: 10px 0; }
+.back:focus-visible { outline: 3px solid var(--white); outline-offset: 3px; }
+</style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">Zurück zur Startseite</a>
+    <section class="box" id="impressum">
+      <h1 class="heading" style="font-size: 24px; margin-bottom: 14px">Impressum</h1>
+      <p>Fynn Burkhardt<br>Bahnhofstraße 57<br>74348 Lauffen am Neckar</p>
+      <p>E-Mail: <a href="mailto:fb.financeclips@gmail.com">fb.financeclips@gmail.com</a></p>
+      <p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+    </section>
+  </main>
+</body>
+</html>
